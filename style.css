@@ -1,0 +1,102 @@
+/*
+
+Theme Name: Trul
+
+Description: Moja tema - www.trul.com
+
+Author: Darko Ipac
+
+Author URI:  http://darkoipacdesign.com/
+
+Version: 1.2
+
+Template: new-zea
+
+*/
+
+@import url("../new-zea/style.css");
+
+/*************************************
+
+    Global Styles
+
+**************************************/
+
+.main-footer {
+  background-color: black;
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+a {
+  color: #47ccb0;
+}
+
+small {
+  line-height: 36px;
+}
+
+/**************************************
+
+    Layout
+
+***************************************/
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-50 {
+  width: 50%;
+  float: left;
+  padding: 0 10px;
+}
+
+.content-area {
+  margin: 30px 0 0 0;
+}
+
+.site-title a {
+  color: #47ccb0 !important;
+}
+
+.current-menu-item > a {
+  color: #47ccb0 !important;
+}
+
+.textwidget p {
+  color: #999999;
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr; }
+  .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto; }
+  .about-info .bio {
+    grid-area: bio;
+    font-size: 1.5rem; }
+  .about-info .job-1 {
+    grid-area: job1; }
+  .about-info .job-2 {
+    rid-area: job2; }
+  .about-info .job-3 {
+    rid-area: job3; }
+  .about-info .jobs {
+    background: #e6e6e6;
+    padding: 0.5rem;
+    border-bottom: #f27919 5px solid;
+    margin-bottom: 20px; }
+
+    @media screen and (max-width: 768px) {
+     
+      .about-info {
+        grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
+        grid-template-columns: 1fr; }
+
+       }
